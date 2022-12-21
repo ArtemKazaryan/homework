@@ -1,6 +1,5 @@
 function validParentheses(parents) {
     let counter = 0;
-
     for (let i = 0; i < parents.length; i++) {
         if (parents[i] === "(") {
             counter++;
@@ -11,7 +10,6 @@ function validParentheses(parents) {
             return false;
         }
     }
-    
     if (counter === 0) {
         return true;
     } else {
@@ -19,7 +17,6 @@ function validParentheses(parents) {
     }
 }
  
-
 validParentheses("()"); // true
 validParentheses(")(()))"); // false
 validParentheses("("); // false
